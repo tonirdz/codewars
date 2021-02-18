@@ -14,6 +14,6 @@ public class Diophantine_Equation extends Thread {
             }
         }
         if (result.toString().equals("[")) return "[]";
-        return result.substring(0, result.length() -2) + "]";
+        return result.substring(0, result.length() - 2) + "]";
     }
 }
