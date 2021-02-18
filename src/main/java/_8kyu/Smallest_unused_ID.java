@@ -1,7 +1,5 @@
 package _8kyu;
 
-import java.util.Arrays;
-
 public class Smallest_unused_ID {
     public static int nextId(int[] ids) {
         boolean[] exists = new boolean[ids.length];
