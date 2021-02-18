@@ -2,18 +2,12 @@ package _8kyu;
 
 public class GrassHopper {
     public static char getGrade(int s1, int s2, int s3) {
-        switch ((s1 + s2 + s3) / 30) {
-            case 10:
-            case 9:
-                return 'A';
-            case 8:
-                return 'B';
-            case 7:
-                return 'C';
-            case 6:
-                return 'D';
-            default:
-                return 'F';
-        }
+        return switch ((s1 + s2 + s3) / 30) {
+            case 10, 9 -> 'A';
+            case 8 -> 'B';
+            case 7 -> 'C';
+            case 6 -> 'D';
+            default -> 'F';
+        };
     }
 }
