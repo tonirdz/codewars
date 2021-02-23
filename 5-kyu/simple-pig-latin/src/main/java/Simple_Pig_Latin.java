@@ -5,7 +5,6 @@ public class Simple_Pig_Latin {
         StringBuilder result = new StringBuilder();
         String[] words = str.split("((?<=[\\p{Punct}\\s])|(?=[\\p{Punct}\\s]))");
         for (String word: words) {
-            System.out.println(word);
             if (!Pattern.matches("[\\p{Punct}\\s]", Character.toString(word.charAt(0)))) {
                 result.append(word.substring(1)).append(word.charAt(0)).append("ay");
             } else {

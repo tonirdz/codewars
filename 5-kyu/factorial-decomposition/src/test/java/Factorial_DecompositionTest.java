@@ -4,7 +4,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class Factorial_DecompositionTest {
     private static void testing(int n, String expected) {
-        System.out.println("N: " + n);
         String actual = Factorial_Decomposition.decomp(n);
         assertEquals(expected, actual);
     }

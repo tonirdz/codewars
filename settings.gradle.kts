@@ -1,6 +1,6 @@
 rootProject.name = "codewars"
 
-val kyudirs = listOf("8-kyu", "7-kyu", "6-kyu")//, "5-kyu", "4-kyu", "3-kyu", "2-kyu", "1-kyu")
+val kyudirs = listOf("8-kyu", "7-kyu", "6-kyu", "5-kyu", "4-kyu")//, "3-kyu", "2-kyu", "1-kyu")
 
 kyudirs.forEach { d ->
     File(rootDir, d).walk()
